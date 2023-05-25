@@ -58,7 +58,7 @@ body{
 }
 
 .content{
-    /* border: aqua solid 2pt; */
+    border: aqua solid 2pt;
     padding: 5%;
 }
 
@@ -66,7 +66,7 @@ section{
     display: flex;
     flex-direction: column;
     animation: gradient-background 18s ease infinite;
-    /* border: black solid 2pt; */
+    border: black solid 2pt;
     text-align: left;
     height: 100vh;
     justify-content: center;
@@ -75,7 +75,7 @@ section{
 }
 
 #home .content{
-    /* border: burlywood solid 2pt; */
+    border: burlywood solid 2pt;
     display: flex;
 }
 
@@ -84,14 +84,14 @@ section{
 }
 
 #home-wrapper{
-    /* border: blue solid 2pt; */
+    border: blue solid 2pt;
     width: 80%;
     margin-right: 50px;
 
 }
 
 .profile-photo{
-    /* border: greenyellow solid 2pt; */
+    border: greenyellow solid 2pt;
     padding: 20px;
     align-self: center;
 }
@@ -100,25 +100,24 @@ img{
     width: 300px;
     display: inline-block;
     margin: auto;
-    /* border: black solid 2pt; */
+    border: black solid 2pt;
     width: 100%;
     height: auto;
 }
 
 .title {
-    /* border: red solid 2pt; */
+    border: red solid 2pt;
     padding: 25px;
 }
 
 .subtitle {
-    /* border: red solid 2pt; */
+    border: red solid 2pt;
     padding: 25px;
     padding-left: 70px;
-    font-size: smaller
 }
 
 .description {
-    /* border: black solid 2pt; */
+    border: black solid 2pt;
     padding: 25px;
     padding-left: 70px;
 }
@@ -160,9 +159,6 @@ p{
     color: #ffffe8;
 }
 
-table{
-    /* border: brown solid 2pt; */
-}
 
 tr, td{
     /* border: brown solid 2pt; */
@@ -176,14 +172,15 @@ footer{
     display: flex;
     /* border: orchid solid 2pt; */
     align-items: center;
-    justify-content: space-between; 
-    width: 100%;
+    width: 20vh;
     padding: 10px;
     margin: auto;
-    /* box-shadow: black 5px 5px 10px; */
     border-top: rgba(255, 255, 255, 0.418) solid 2pt;
     position: relative;
-    bottom: 0;
+}
+
+.footer p{
+    font-size: 7pt;
 }
 
 
@@ -200,51 +197,181 @@ footer{
 }
 
 
-@media(min-width:321px) and (max-width: 400px){
-    section#box-profile{
-        width: 90%;
-        height: 630px;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 30px;
+@media (max-width:576px){
+
+    section, #home .content, #home-wrapper{
+        padding: 0;
     }
-    .menu-mobile{
-        top: 20px;
-        right: 10%;
-        display: inline-block;
-    }
-    nav ul{
-        display: none;
-        right: 0;
-        width: 100%;
+
+    #home .content{
+        flex-direction: column-reverse;
+        padding: 25px;
         text-align: center;
-        top: 43px;
-        z-index: 99;
-        background: #fff;
+        
     }
-    nav ul li{
-        float: unset;
-        margin: 0;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .description{
-        padding-left: 0px;
+
+    #home-wrapper{
         width: 100%;
+        margin-right: 0;
+    }
+
+    .title{
+        padding: 10px;
+    }
+
+    .subtitle{
+        padding: 10px;
+        padding-left: 50px;
+
+    }
+
+    h1{
+        font-size: 18pt;
+        padding-bottom: 5px;
+    }
+
+    h2{
+        font-size: 12pt;
+    }
+    
+    p{
+        font-size: 10pt;
+    }
+
+    .navbar a{
+        font-size: 7pt;
+        padding: 5px;
+    }
+    .home-button{
+        font-size: 7pt;
+        padding-left: 15px;
+    }
+
+    tr, td{
+        font-size: 10pt;
+    }
+}
+
+@media (max-width: 768px){
+   
+    section, #home .content, #home-wrapper{
+        padding: 0;
+    }
+
+    #home .content{
+        flex-direction: column-reverse;
+        padding: 25px;
         text-align: center;
-        margin-left: 0;
-        border: none;
+        
     }
-    .description .button{
-        margin-right: 10px;
-        margin-left: 10px;
+
+    #home-wrapper{
+        width: 100%;
+        margin-right: 0;
     }
-    .img-profile .photo{
-        left: 35px;
-        position: relative;
+
+    .profile-photo{
+        padding: 0;
     }
-    .information{
-        top: 75px;
-        margin-left: 25px;
-        font-size: 14px;
+
+    img{
+        width: 80%;
     }
+
+    .title{
+        padding: 10px;
+    }
+
+    .subtitle{
+        padding: 10px;
+        padding-left: 50px;
+
+    }
+
+    h1{
+        font-size: 18pt;
+        padding-bottom: 5px;
+    }
+
+    h2{
+        font-size: 12pt;
+    }
+    
+    p{
+        font-size: 10pt;
+    }
+
+    .navbar a{
+        font-size: 7pt;
+        padding: 5px;
+    }
+    .home-button{
+        font-size: 7pt;
+        padding-left: 15px;
+    }
+
+    tr, td{
+        font-size: 10pt;
+    }
+}
+
+@media (max-width: 992px){
+   
+    section, #home .content, #home-wrapper{
+        padding: 0;
+    }
+
+    #home .content{
+        padding: 25px;
+        text-align: center;  
+    }
+
+    #home-wrapper{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .profile-photo{
+        padding: 0;
+    }
+
+    img{
+        width: 80%;
+    }
+
+    .title{
+        padding: 10px;
+    }
+
+    .subtitle{
+        padding: 10px;
+        padding-left: 50px;
+
+    }
+
+    h1{
+        font-size: 18pt;
+        padding-bottom: 5px;
+    }
+
+    h2{
+        font-size: 12pt;
+    }
+    
+    p{
+        font-size: 10pt;
+    }
+
+    .navbar a{
+        font-size: 7pt;
+        padding: 5px;
+    }
+    .home-button{
+        font-size: 7pt;
+        padding-left: 15px;
+    }
+
+    tr, td{
+        font-size: 10pt;
+    }
+}
