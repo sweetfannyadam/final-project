@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=DynaPuff:wght@400;500&family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- HEADER START -->
+        <header>
+
+            <a href="#name.html" class="home-button">Home</a>
+    
+            <nav class="navbar">
+                <a href="#experience.html">Experiences</a>
+                <a href="#education.html">Education</a>
+                <a href="#skills.html">Skills</a>
+                <a href="#interest.html">Interest</a>
+                <a href="#award.html">Award</a>         
+            </nav>
+    
+        </header>
+    
+        <!-- HEADER END -->
+    
+        
+    
+        <!-- HOME START -->
+        <section class="home">
+            <div class="content" id="name">
+                <div id="content">
+                    <div class="title">
+                        <h1>Elizabeth Clara</h1>
+                        <h2>Fresh Graduate</h2>
+                    </div>
+                    <div class="description">
+                        <p>Graduated with a Bachelor of Science degree in Chemistry at Universitas Padjajaran with a GPA of 3.47 and learned
+                            some statistical tools, chemical tools, and Microsoft. Along with my laboratory skill and understanding of
+                            Chemistry, I became a part of the RnD <span id="dots">...</span><span id="more">Intern at Perusahaan Daerah Air Minum (PDAM) Tirtaweming Kota Bandung. I also
+                            attended some training and participated in several event organizations during college. Interested in Quality
+                            Control, Quality Assurance, Laboratory Analyst, Research and Development.</span></p><br/>
+                        <button onclick="readMore()" id="read-more">Read more</button>
+                    </div>
+                </div>
+                
+                <div class="profile-photo">
+                    <img src="./assets/image/R.gif" alt="profile-photo">
+                </div>            
+            </div>
+    
+            <div class="content" id="experience">
+                <div id="content">
+                    <div class="title"><h1>Experiences</h1></div>
+                <div class="subtitle"><h2>Research and Development Intern, PDAM Tirtaweming Kota Bandung (Mar 2021 - May 2021)</h2></div>
+                <div class="description">
+                    <p>Determined the optimum dose of PAC coagulant and studied its effects on the water quality of water treatment process using Jar Test method.
+                        Regularly analyzed and reported water quality in the water treatment plant.
+                    </p>
+                </div>
+                </div>
+            </div>
+    
+            <div class="content" id="education">
+                <div id="content">
+                    <div class="title"><h1>Education</h1></div>
+                    <div class="subtitle"><h2>Bachelor of Science, Universitas Padjadjaran (2018 - 2022)</h2></div>
+                    <div class="description">
+                        <p>Proficient in extensive knowledge of Chemistry principles, theories, and laboratory skills. Have synthesized and characterized natural polymer based membranes as my final project with a GPA of 3.47.</p>
+                    </div>
+                    <div class="subtitle"><h2>Senior High School, SMAN 1 Slawi (2015 - 2018)</h2></div>
+                    <div class="description"><p>Natural science</p></div>
+                </div>
+            </div>
+
+            <div class="content" id="skills">
+                <div id="content">
+                    <div class="title"><h1>Skills</h1></div>
+                    <table cellspacing="10">
+                        <tr>
+                            <td>Microsoft Word</td>
+                            <td>ChemDraw</td>
+                        </tr>
+                        <tr>
+                            <td>Microsoft PowerPoint</td>
+                            <td>Laboratory Skills</td>
+                        </tr>
+                        <tr>
+                            <td>Microsoft Excel</td>
+                            <td>Python</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="content" id="interest">
+                <div id="content">
+                    <div class="title"><h1>Interest</h1></div>
+                    <div class="subtitle"><h2>Machine Learning</h2></div>
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis tempore ab tenetur rerum, aperiam quos nulla sapiente possimus corporis quis sint maiores vitae temporibus, eum minus cum? Voluptas, sequi rem.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content" id="award">
+                <div id="content">
+                    <div class="title"><h1>Award</h1></div>
+                    <div class="subtitle"><h2></h2></div>
+                    <div class="description">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis tempore ab tenetur rerum, aperiam quos nulla sapiente possimus corporis quis sint maiores vitae temporibus, eum minus cum? Voluptas, sequi rem.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- HOME END -->
+    
+        <!-- FOOTER START -->
+    
+        <footer>
+            <div class="copyright">
+                <p>Elizabeth Clara</p>
+            </div>
+        </footer>
+    
+        <!-- FOOTER END -->
+
+    </div>
+
+</body>
+
+<script>
+    function readMore() {
+        let dots = document.getElementById("dots");
+        let moreText = document.getElementById("more");
+        let btnText = document.getElementById("read-more");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+        }
+    }
+</script>
+
+</html>
